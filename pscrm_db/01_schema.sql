@@ -35,7 +35,7 @@ CREATE TABLE tasks
 	task_info text NOT NULL,
 	price numeric(15, 2) DEFAULT 0, 
 	task_status task_status_type NOT NULL DEFAULT 'WAITING',
-	task_taken_date date NOT NULL DEFAULT CURRENT_DATE,
+	task_take_date date NOT NULL DEFAULT CURRENT_DATE,
 	task_deadline_date date NOT NULL,
 	task_comments text 
 );
