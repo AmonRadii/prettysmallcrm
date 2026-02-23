@@ -13,7 +13,7 @@ CREATE TABLE clients
 	client_name varchar(128) NOT NULL,
 	client_address varchar(256) NOT NULL,
 	have_car boolean DEFAULT false,
-	comments_for_client text
+	comments_for_client text,
 
 	-- Maintain data integrity while handling multiple clients per address and duplicate names across different locations.
 	CONSTRAINT unique_client_indentity UNIQUE (client_name, client_address)
