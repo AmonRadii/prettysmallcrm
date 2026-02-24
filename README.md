@@ -28,6 +28,8 @@ A compact CRM database template designed for freelancers or sole proprietors, op
     ```bash
     psql -d your_crm_name -f prettysmallcrm/pscrm_db/02_seed.sql
 
+Optionally, you can test several queries from the '03_examples.sql' file. These include, for example, calculating the total balance and reporting payment.
+
 ## Entity-Relationship Diagram (ERD)
 ![erd](pscrm_erd.png)
 
