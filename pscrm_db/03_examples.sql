@@ -24,5 +24,5 @@ SELECT
 FROM tasks t
 JOIN clients c ON t.client_id = c.client_id
 LEFT JOIN transaction_tasks tt ON t.task_id = tt.task_id
-GROUP BY c.client_name, t.task_id, t.task_info, t.price, t.task_status
+GROUP BY c.client_name, c.client_address, t.task_id, t.task_info, t.price, t.task_status
 ORDER BY balance_due DESC;
